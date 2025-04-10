@@ -13,10 +13,33 @@
       </style>
 </head>
 <body>
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Primer elemento</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Segundo elemento</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Terceros elementos</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+            Primer barrita de prueba 1
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Segunda barrita de prueba 2
+            </div>
+          </div>
+        </div>
+      </div>
     <h1>Imágenes no Encontradas</h1>
     <p id="imagenes-no-encontradas"></p>
     <div id="data-container"></div>
     <script src="script.js"></script>
+
+    
 </body>
 </html>
 
